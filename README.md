@@ -164,9 +164,9 @@ The extracted project folder should remain at the first folder level of the driv
 Launching the application is simple:
 
 1. Open the extracted folder you created (e.g. `D:\JS-ToDo-List`).
-2. Run `todo_app.exe`.
-3. The application will automatically create or use its required files (such as the database and attachment folder).
-4. No installation wizard is required unless you downloaded a specific installer version.
+2. Run `JS-To-Do-List-v1.0.0-windows-x64.exe`.
+3. The application will automatically generate its required files (such as the database and attachment folders).
+4. No installation wizard is required.
 
 ---
 
@@ -201,14 +201,10 @@ When extracted correctly, your application folder will contain the following fil
 ```
 JS-To-Do-List/
 │
-├── todo_app.exe         # Main application.
-├── info_panel.exe       # Additional information utility.
-├── js_todo.db           # SQLite database storing tasks.
-├── icon.ico             # Application icon.
-├── task_attachments/    # Stores user attachment files.
-├── README.md            # Documentation.
-├── unins000.exe         # Application uninstaller (if installer was used).
-└── unins000.dat         # Uninstaller data.
+├── JS-To-Do-List-v1.0.0-windows-x64.exe  # Main portable application.
+├── js_todo.db                            # SQLite database storing tasks (generated on first launch).
+├── task_attachments/                     # Stores user attachment files (generated on first launch).
+└── data/                                 # Internal data folder (generated on first launch).
 ```
 
 </details>
