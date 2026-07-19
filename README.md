@@ -114,23 +114,24 @@ JS To-Do-List is a futuristic, fully offline task manager developed by **Jayasub
 
 <p align="center">
   <a href="https://github.com/jayamani2006/Jayamani_JS-To-Do-List/releases/latest">
-    <img src="https://img.shields.io/badge/⬇%20%20Download%20JS%20To--Do--List%20v1.0.0%20%20–%20%20Windows%2010%20%2F%2011%20x64-0078D7?style=for-the-badge&logo=windows&logoColor=white" alt="Download Latest Release">
+    <img src="https://img.shields.io/badge/⬇%20%20Download%20JS%20To--Do--List%20v1.0.0%20Installer%20%20–%20%20Windows%2010%20%2F%2011%20x64-0078D7?style=for-the-badge&logo=windows&logoColor=white" alt="Download Latest Release">
   </a>
 </p>
 
 <p align="center">
-  <strong>No installation required — download and double-click to run on Windows 10 / 11.</strong>
+  <strong>Download the official Windows Installer to automatically setup the application.</strong>
 </p>
 
 ---
 
 ## Installation
 
-The application is distributed as a compressed archive. You do not need to install Python or run any complicated setup commands.
+The application is distributed as a professional Windows installer. You do not need to install Python or run any complicated setup commands.
 
 1. Click the **Download** button above or go to [Releases](https://github.com/jayamani2006/Jayamani_JS-To-Do-List/releases/latest).
-2. Download the compressed archive (`JS-To-Do-List-v1.0.0-windows-x64.zip`).
-3. Extract the ZIP file completely to a dedicated folder on your computer.
+2. Download the installer executable (`JS_ToDo_Setup.exe`).
+3. Run the installer and choose your preferred installation location.
+4. Complete the installation. The installer will automatically extract and configure the required application folder.
 
 *See [docs/INSTALL.md](docs/INSTALL.md) for troubleshooting and details.*
 
@@ -138,14 +139,14 @@ The application is distributed as a compressed archive. You do not need to insta
 
 ## Installation Location
 
-For the best experience, the application works best when extracted into its own dedicated folder directly at the root of a drive.
+During installation, the setup wizard will ask where to install the application. For the best experience and data safety, install the application into its own dedicated folder directly at the root of a drive.
 
 **Recommended installation locations:**
-- ✔ `D:\JS-ToDo-List`
-- ✔ `E:\JS-ToDo-List`
+- ✔ `D:\JS To-Do-List`
+- ✔ `E:\JS To-Do-List`
 
 **If your computer only has a C drive:**
-- ✔ `C:\JS-ToDo-List`
+- ✔ `C:\JS To-Do-List`
 
 **Avoid installing inside these locations:**
 - ❌ `C:\Program Files`
@@ -153,9 +154,9 @@ For the best experience, the application works best when extracted into its own 
 - ❌ Windows System folders
 - ❌ Desktop
 - ❌ Downloads
-- ❌ Deeply nested folders (e.g. `C:\Users\User\Downloads\New Folder\Another Folder\JS-ToDo-List`)
+- ❌ Deeply nested folders (e.g. `C:\Users\User\Downloads\New Folder\Another Folder\JS To-Do-List`)
 
-The extracted project folder should remain at the first folder level of the drive whenever possible.
+Keeping the application folder at the root level of the drive prevents Windows permissions issues with the local SQLite database.
 
 ---
 
@@ -163,18 +164,17 @@ The extracted project folder should remain at the first folder level of the driv
 
 Launching the application is simple:
 
-1. Open the extracted folder you created (e.g. `D:\JS-ToDo-List`).
-2. Run `JS-To-Do-List-v1.0.0-windows-x64.exe`.
-3. The application will automatically generate its required files (such as the database and attachment folders).
-4. No installation wizard is required.
+1. Open the installed folder you created (e.g. `D:\JS To-Do-List`) or use the Desktop Shortcut if you created one during setup.
+2. Run `todo_app.exe`.
+3. On first launch, the application will automatically generate its required data files (such as the database and attachment folders).
 
 ---
 
 ## Requirements
 
 - **OS:** Windows 10 or 11 (64-bit)
-- **Dependencies:** None required for the portable executable.
-- **Storage:** Minimum 50 MB disk space.
+- **Dependencies:** None required (fully bundled executable).
+- **Storage:** Minimum 80 MB disk space.
 
 ---
 
@@ -193,18 +193,20 @@ Launching the application is simple:
 
 ## Folder Structure
 
-When extracted correctly, your application folder will contain the following files:
+When installed correctly, your application folder will contain the following files:
 
 <details>
 <summary>Click to expand folder tree</summary>
 
 ```
-JS-To-Do-List/
+JS To-Do-List/
 │
-├── JS-To-Do-List-v1.0.0-windows-x64.exe  # Main portable application.
-├── js_todo.db                            # SQLite database storing tasks (generated on first launch).
-├── task_attachments/                     # Stores user attachment files (generated on first launch).
-└── data/                                 # Internal data folder (generated on first launch).
+├── todo_app.exe         # Main application executable.
+├── js_todo.db           # SQLite database storing tasks (generated on first launch).
+├── task_attachments/    # Stores user attachment files (generated on first launch).
+├── data/                # Internal data folder (generated on first launch).
+├── unins000.exe         # Application uninstaller.
+└── unins000.dat         # Uninstaller support data.
 ```
 
 </details>
