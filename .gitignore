@@ -1,0 +1,11 @@
+build/
+dist/
+__pycache__/
+*.pyc
+*.spec.bak
+js_todo.db
+task_attachments/
+outputs/
+data/
+.vscode/
+*.log
