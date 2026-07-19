@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/icons/JSSTP logo.jpg" alt="JS SoftTools Logo" width="120" style="border-radius: 50%;">
+  <img src="assets/icons/JSSTP logo.jpg" alt="JS SoftTools Logo" width="150" style="border-radius: 50%;">
 </p>
 
 > **IMPORTANT:** This software is developed for student learning and educational purposes only.
@@ -52,10 +52,10 @@ JS To-Do-List is a futuristic, fully offline task manager developed by **Jayasub
 
 - **Unlimited Folders** — Categorize your tasks into as many folders as you need.
 - **Rich Attachments** — Attach PDFs, DOCX, XLSX, MP3s, and Images directly to any task.
-- **Time Reference View** — Color-coded urgency system: Green (on track), Yellow (approaching), Red (overdue).
+- **Time Reference View** — Color-coded urgency: Green (on track), Yellow (approaching), Red (overdue).
 - **Midnight Watcher** — Automatically monitors and rolls over daily/repeating tasks at midnight.
 - **Task Feedback System** — Rate completed tasks with emoji-based feedback ratings.
-- **Portable Executable** — Single-file `.exe`, no Python installation required for end users.
+- **Portable Executable** — Single-file `.exe`, no Python installation required.
 
 *See [docs/FEATURES.md](docs/FEATURES.md) for the full feature list.*
 
@@ -65,7 +65,7 @@ JS To-Do-List is a futuristic, fully offline task manager developed by **Jayasub
 
 <p align="center">
   <img src="assets/banner/hero-banner.png" alt="JS To-Do-List Banner" width="49%">
-  <img src="assets/banner/hero-banner.png" alt="JS To-Do-List Banner 2" width="49%">
+  <img src="assets/banner/hero-banner.png" alt="JS To-Do-List Banner" width="49%">
 </p>
 
 <table align="center">
@@ -100,12 +100,12 @@ JS To-Do-List is a futuristic, fully offline task manager developed by **Jayasub
 ## Demo
 
 <p align="center">
-  <video src="assets/demo/demo.mp4" controls width="100%">
-    <img src="assets/demo/demo.gif" alt="JS To-Do-List Demo GIF" width="100%">
-  </video>
+  <a href="assets/demo/demo.mp4">
+    <img src="assets/screenshots/main-window.png" alt="▶ Click to watch demo video" width="100%">
+  </a>
 </p>
 
-> 📺 **Video not playing?** → [Click here to watch the demo](assets/demo/demo.mp4) &nbsp;|&nbsp; [View as GIF](assets/demo/demo.gif)
+> 🎥 **[▶ Watch full demo walkthrough (demo.mp4)](assets/demo/demo.mp4)**
 
 ---
 
@@ -113,12 +113,12 @@ JS To-Do-List is a futuristic, fully offline task manager developed by **Jayasub
 
 <p align="center">
   <a href="https://github.com/jayamani2006/Jayamani_JS-To-Do-List/releases/latest">
-    <img src="https://img.shields.io/badge/⬇%20%20Download%20JS%20To--Do--List%20v1.0.0-%20Windows%20x64-0078D7?style=for-the-badge&logo=windows&logoColor=white" alt="Download Latest Release" height="50">
+    <img src="https://img.shields.io/badge/⬇%20%20Download%20JS%20To--Do--List%20v1.0.0%20%20–%20%20Windows%2010%20%2F%2011%20x64-0078D7?style=for-the-badge&logo=windows&logoColor=white" alt="Download Latest Release">
   </a>
 </p>
 
 <p align="center">
-  <strong>No installation required. Download and run instantly on Windows 10 / 11.</strong>
+  <strong>No installation required — download and double-click to run on Windows 10 / 11.</strong>
 </p>
 
 ---
@@ -126,29 +126,19 @@ JS To-Do-List is a futuristic, fully offline task manager developed by **Jayasub
 ## Installation
 
 **Portable EXE (Recommended)**
-1. Click the **Download** button above or visit [Releases](https://github.com/jayamani2006/Jayamani_JS-To-Do-List/releases/latest).
+1. Click the **Download** button above or go to [Releases](https://github.com/jayamani2006/Jayamani_JS-To-Do-List/releases/latest).
 2. Download `JS-To-Do-List-v1.0.0-windows-x64.exe`.
-3. Double-click to run instantly. No Python required.
+3. Double-click to run. No Python required.
 
-*See [docs/INSTALL.md](docs/INSTALL.md) for more details.*
+*See [docs/INSTALL.md](docs/INSTALL.md) for troubleshooting and details.*
 
 ---
 
 ## Requirements
 
 - **OS:** Windows 10 or 11 (64-bit)
-- **Dependencies:** None for the portable executable.
+- **Dependencies:** None required for the portable executable.
 - **Storage:** Minimum 50 MB disk space.
-
----
-
-<p align="center">
-  <img src="assets/icons/JSSTP logo.jpg" alt="JS SoftTools Logo" width="55" style="border-radius: 50%;">
-  &nbsp;&nbsp;&nbsp;
-  <img src="assets/icons/icon.ico" alt="JS To-Do-List App Icon" width="55">
-</p>
-
-<p align="center"><em>JS SoftTools · Chip-X · Built with Python & Tkinter</em></p>
 
 ---
 
@@ -157,11 +147,11 @@ JS To-Do-List is a futuristic, fully offline task manager developed by **Jayasub
 1. **Open the app.**
 2. **Create Folders** — Use the left sidebar to organize your workflow.
 3. **Add Tasks** — Click "Add Task" inside any selected folder.
-4. **Attach Files** — Link any local file (PDF, image, audio, document) directly to a task.
-5. **Track Progress** — Use the Time Reference view to see color-coded urgency.
+4. **Attach Files** — Link any local file (PDF, image, audio, document) to a task.
+5. **Track Progress** — Use the Time Reference view for color-coded urgency.
 6. **Complete & Rate** — Mark tasks complete and leave an emoji feedback rating.
 
-*See [docs/USER_GUIDE.md](docs/USER_GUIDE.md) for full instructions.*
+*See [docs/USER_GUIDE.md](docs/USER_GUIDE.md) for full application instructions.*
 
 ---
 
@@ -175,7 +165,7 @@ JS-To-Do-List/
 ├── .github/          # GitHub Actions CI workflows & issue templates
 ├── assets/           # UI media — banners, screenshots, demo videos, icons
 │   ├── banner/       # Hero banners
-│   ├── demo/         # GIF and MP4 demo files
+│   ├── demo/         # MP4 demo video
 │   ├── icons/        # App icon and brand logo
 │   └── screenshots/  # Application UI screenshots
 ├── docs/             # Technical documentation
@@ -193,9 +183,9 @@ JS-To-Do-List/
 
 ## Architecture
 
-Built using Python, Tkinter, and an auto-migrating SQLite database (`js_todo.db`), the app uses a clean state-machine pattern to decouple UI logic from data operations.
+Built using Python, Tkinter, and an auto-migrating SQLite database (`js_todo.db`).
 
-- The SQLite database is dynamically generated on first launch — no setup required.
+- The database is dynamically created on first launch — no setup needed.
 - Local file attachments are referenced by path, keeping the database lightweight.
 - A background thread monitors midnight to auto-reset daily repeating tasks.
 
@@ -217,19 +207,19 @@ Built using Python, Tkinter, and an auto-migrating SQLite database (`js_todo.db`
 ## Roadmap
 
 - Cross-platform support (Linux, macOS)
-- Cloud sync option (optional, local-first by default)
+- Optional cloud sync (local-first by default)
 - Enhanced keyboard shortcuts and accessibility
 
-*See [ROADMAP.md](ROADMAP.md) for the full list of planned improvements.*
+*See [ROADMAP.md](ROADMAP.md) for the full planned list.*
 
 ---
 
 ## FAQ
 
-**Q: Where are my attachments stored?**
+**Q: Where are my attachments stored?**  
 A: Inside the `task_attachments/` folder on your local machine.
 
-**Q: Is my data private?**
+**Q: Is my data private?**  
 A: Yes. Everything is 100% local. No internet connection is ever used.
 
 *Read more in [docs/FAQ.md](docs/FAQ.md).*
@@ -252,12 +242,13 @@ Please also read [DISCLAIMER.md](DISCLAIMER.md) regarding usage and limitations.
 ## Developer
 
 <p align="center">
-  <img src="assets/icons/JSSTP logo.jpg" alt="JS SoftTools" width="80" style="border-radius: 50%;">
+  <img src="assets/icons/JSSTP logo.jpg" alt="JS SoftTools Logo" width="80" style="border-radius: 50%;">
+  &nbsp;&nbsp;&nbsp;
+  <img src="assets/icons/icon.ico" alt="JS To-Do-List App Icon" width="60">
 </p>
 
 <p align="center">
-  Developed by <strong>Jayasubramani</strong><br>
-  Founder · JS SoftTools · Chip-X Team<br>
+  Developed by <strong>Jayasubramani</strong> under the brand <strong>Chip-X / JS SoftTools</strong>.<br>
   B.E. Electrical & Electronics Engineering · Knowledge Institute of Technology · Anna University · Class of 2027
 </p>
 
@@ -265,7 +256,7 @@ Please also read [DISCLAIMER.md](DISCLAIMER.md) regarding usage and limitations.
 
 ## Support
 
-Found a bug or have a feature request?
+Found a bug or have a feature request? Please open an issue on the [GitHub Issues](https://github.com/jayamani2006/Jayamani_JS-To-Do-List/issues) page.
 
 - 🐛 [Report a Bug](https://github.com/jayamani2006/Jayamani_JS-To-Do-List/issues/new?template=bug_report.md)
 - 💡 [Request a Feature](https://github.com/jayamani2006/Jayamani_JS-To-Do-List/issues/new?template=feature_request.md)
