@@ -102,11 +102,11 @@ JS To-Do-List is a futuristic, fully offline task manager developed by **Jayasub
 
 <p align="center">
   <a href="assets/demo/demo.mp4">
-    <img src="assets/screenshots/main-window.png" alt="▶ Click to watch demo video" width="100%">
+    <img src="assets/demo/demo_preview.gif" alt="▶ Click to watch full demo video" width="100%">
   </a>
 </p>
 
-> 🎥 **[▶ Watch full demo walkthrough (demo.mp4)](assets/demo/demo.mp4)**
+> 🎥 **[▶ Watch full HD demo walkthrough (demo.mp4)](assets/demo/demo.mp4)**
 
 ---
 
