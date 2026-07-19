@@ -33,11 +33,12 @@ JS To-Do-List is a futuristic, fully offline task manager developed by **Jayasub
 - [Demo](#demo)
 - [Download](#download)
 - [Installation](#installation)
+- [Installation Location](#installation-location)
+- [First Launch](#first-launch)
 - [Requirements](#requirements)
 - [Usage](#usage)
-- [Project Structure](#project-structure)
+- [Folder Structure](#folder-structure)
 - [Architecture](#architecture)
-- [Building from Source](#building-from-source)
 - [Roadmap](#roadmap)
 - [FAQ](#faq)
 - [Contributing](#contributing)
@@ -125,12 +126,47 @@ JS To-Do-List is a futuristic, fully offline task manager developed by **Jayasub
 
 ## Installation
 
-**Portable EXE (Recommended)**
+The application is distributed as a compressed archive. You do not need to install Python or run any complicated setup commands.
+
 1. Click the **Download** button above or go to [Releases](https://github.com/jayamani2006/Jayamani_JS-To-Do-List/releases/latest).
-2. Download `JS-To-Do-List-v1.0.0-windows-x64.exe`.
-3. Double-click to run. No Python required.
+2. Download the compressed archive (`JS-To-Do-List-v1.0.0-windows-x64.zip`).
+3. Extract the ZIP file completely to a dedicated folder on your computer.
 
 *See [docs/INSTALL.md](docs/INSTALL.md) for troubleshooting and details.*
+
+---
+
+## Installation Location
+
+For the best experience, the application works best when extracted into its own dedicated folder directly at the root of a drive.
+
+**Recommended installation locations:**
+- ✔ `D:\JS-ToDo-List`
+- ✔ `E:\JS-ToDo-List`
+
+**If your computer only has a C drive:**
+- ✔ `C:\JS-ToDo-List`
+
+**Avoid installing inside these locations:**
+- ❌ `C:\Program Files`
+- ❌ `C:\Program Files (x86)`
+- ❌ Windows System folders
+- ❌ Desktop
+- ❌ Downloads
+- ❌ Deeply nested folders (e.g. `C:\Users\User\Downloads\New Folder\Another Folder\JS-ToDo-List`)
+
+The extracted project folder should remain at the first folder level of the drive whenever possible.
+
+---
+
+## First Launch
+
+Launching the application is simple:
+
+1. Open the extracted folder you created (e.g. `D:\JS-ToDo-List`).
+2. Run `todo_app.exe`.
+3. The application will automatically create or use its required files (such as the database and attachment folder).
+4. No installation wizard is required unless you downloaded a specific installer version.
 
 ---
 
@@ -155,26 +191,24 @@ JS To-Do-List is a futuristic, fully offline task manager developed by **Jayasub
 
 ---
 
-## Project Structure
+## Folder Structure
+
+When extracted correctly, your application folder will contain the following files:
 
 <details>
 <summary>Click to expand folder tree</summary>
 
 ```
 JS-To-Do-List/
-├── .github/          # GitHub Actions CI workflows & issue templates
-├── assets/           # UI media — banners, screenshots, demo videos, icons
-│   ├── banner/       # Hero banners
-│   ├── demo/         # MP4 demo video
-│   ├── icons/        # App icon and brand logo
-│   └── screenshots/  # Application UI screenshots
-├── docs/             # Technical documentation
-├── packaging/        # PyInstaller specs & build scripts
-├── sample_data/      # Demo seed database
-├── src/              # Python application source
-│   ├── todo_app.py   # Main application (Tkinter + SQLite)
-│   └── welcome.py    # Neon launcher splash screen
-└── [Config Files]    # README, LICENSE, CHANGELOG, requirements.txt, etc.
+│
+├── todo_app.exe         # Main application.
+├── info_panel.exe       # Additional information utility.
+├── js_todo.db           # SQLite database storing tasks.
+├── icon.ico             # Application icon.
+├── task_attachments/    # Stores user attachment files.
+├── README.md            # Documentation.
+├── unins000.exe         # Application uninstaller (if installer was used).
+└── unins000.dat         # Uninstaller data.
 ```
 
 </details>
@@ -190,17 +224,6 @@ Built using Python, Tkinter, and an auto-migrating SQLite database (`js_todo.db`
 - A background thread monitors midnight to auto-reset daily repeating tasks.
 
 *Read the full technical breakdown in [docs/PROJECT_ARCHITECTURE.md](docs/PROJECT_ARCHITECTURE.md).*
-
----
-
-## Building from Source
-
-1. Clone the repo and create a virtual environment (`Python 3.8+`).
-2. `pip install -r requirements.txt`
-3. Run directly: `python src/todo_app.py`
-4. Build EXE: run `packaging/build_app.bat`
-
-*See [docs/BUILD.md](docs/BUILD.md) for detailed build instructions.*
 
 ---
 
