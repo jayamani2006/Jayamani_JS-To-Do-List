@@ -4,10 +4,6 @@
 
 > **IMPORTANT:** This software is developed for student learning and educational purposes only.
 
-<p align="center">
-  <img src="assets/banner/hero-banner.png" alt="JS To-Do-List Banner" width="100%">
-</p>
-
 <h1 align="center">JS To-Do-List</h1>
 
 <p align="center">
@@ -35,6 +31,7 @@ JS To-Do-List is a futuristic, fully offline task manager developed by **Jayasub
 - [Features](#features)
 - [Screenshots](#screenshots)
 - [Demo](#demo)
+- [Download](#download)
 - [Installation](#installation)
 - [Requirements](#requirements)
 - [Usage](#usage)
@@ -66,6 +63,11 @@ JS To-Do-List is a futuristic, fully offline task manager developed by **Jayasub
 
 ## Screenshots
 
+<p align="center">
+  <img src="assets/banner/hero-banner.png" alt="JS To-Do-List Banner" width="49%">
+  <img src="assets/banner/hero-banner.png" alt="JS To-Do-List Banner 2" width="49%">
+</p>
+
 <table align="center">
   <tr>
     <td><img src="assets/screenshots/main-window.png" alt="Main Dashboard" width="400"></td>
@@ -76,15 +78,17 @@ JS To-Do-List is a futuristic, fully offline task manager developed by **Jayasub
     <td align="center"><strong>Task List View</strong></td>
   </tr>
   <tr>
-    <td><img src="assets/screenshots/Task-page1.png" alt="Task Details - Part 1" width="400"></td>
-    <td><img src="assets/screenshots/Task-page2.png" alt="Task Details - Part 2" width="400"></td>
+    <td><img src="assets/screenshots/Task-page1.png" alt="Task Details Top" width="400"></td>
+    <td><img src="assets/screenshots/Task-page2.png" alt="Task Details Bottom" width="400"></td>
   </tr>
   <tr>
     <td align="center"><strong>Task Details (Top)</strong></td>
     <td align="center"><strong>Task Details (Bottom)</strong></td>
   </tr>
   <tr>
-    <td colspan="2" align="center"><img src="assets/screenshots/Task-Folder.png" alt="Folder Dashboard" width="400"></td>
+    <td colspan="2" align="center">
+      <img src="assets/screenshots/Task-Folder.png" alt="Folder Dashboard" width="400">
+    </td>
   </tr>
   <tr>
     <td colspan="2" align="center"><strong>Folder Dashboard</strong></td>
@@ -96,53 +100,68 @@ JS To-Do-List is a futuristic, fully offline task manager developed by **Jayasub
 ## Demo
 
 <p align="center">
-  <img src="assets/demo/demo.gif" alt="JS To-Do-List Demo GIF" width="100%">
+  <video src="assets/demo/demo.mp4" controls width="100%">
+    <img src="assets/demo/demo.gif" alt="JS To-Do-List Demo GIF" width="100%">
+  </video>
 </p>
 
-> 🎥 **[Watch full MP4 walkthrough (demo.mp4)](assets/demo/demo.mp4)**
+> 📺 **Video not playing?** → [Click here to watch the demo](assets/demo/demo.mp4) &nbsp;|&nbsp; [View as GIF](assets/demo/demo.gif)
+
+---
+
+## Download
+
+<p align="center">
+  <a href="https://github.com/jayamani2006/Jayamani_JS-To-Do-List/releases/latest">
+    <img src="https://img.shields.io/badge/⬇%20%20Download%20JS%20To--Do--List%20v1.0.0-%20Windows%20x64-0078D7?style=for-the-badge&logo=windows&logoColor=white" alt="Download Latest Release" height="50">
+  </a>
+</p>
+
+<p align="center">
+  <strong>No installation required. Download and run instantly on Windows 10 / 11.</strong>
+</p>
 
 ---
 
 ## Installation
 
 **Portable EXE (Recommended)**
-1. Download `JS-To-Do-List-v1.0.0-windows-x64.exe` from [Releases](https://github.com/jayamani2006/Jayamani_JS-To-Do-List/releases/latest).
-2. Double-click to run instantly. No installation required.
+1. Click the **Download** button above or visit [Releases](https://github.com/jayamani2006/Jayamani_JS-To-Do-List/releases/latest).
+2. Download `JS-To-Do-List-v1.0.0-windows-x64.exe`.
+3. Double-click to run instantly. No Python required.
 
-*See [docs/INSTALL.md](docs/INSTALL.md) for detailed instructions.*
+*See [docs/INSTALL.md](docs/INSTALL.md) for more details.*
 
 ---
 
 ## Requirements
 
 - **OS:** Windows 10 or 11 (64-bit)
-- **Dependencies:** None required for the portable executable.
+- **Dependencies:** None for the portable executable.
 - **Storage:** Minimum 50 MB disk space.
 
 ---
 
 <p align="center">
-  <img src="assets/icons/JSSTP logo.jpg" alt="JS SoftTools Logo" width="60" style="border-radius: 50%;">
-  &nbsp;&nbsp;
-  <img src="assets/icons/icon.ico" alt="JS To-Do-List App Icon" width="60">
+  <img src="assets/icons/JSSTP logo.jpg" alt="JS SoftTools Logo" width="55" style="border-radius: 50%;">
+  &nbsp;&nbsp;&nbsp;
+  <img src="assets/icons/icon.ico" alt="JS To-Do-List App Icon" width="55">
 </p>
 
-<p align="center">
-  <em>Built by JS SoftTools · Chip-X Team</em>
-</p>
+<p align="center"><em>JS SoftTools · Chip-X · Built with Python & Tkinter</em></p>
 
 ---
 
 ## Usage
 
 1. **Open the app.**
-2. **Create Folders** — Use the left sidebar to add and organize folders.
-3. **Add Tasks** — Click "Add Task" inside any folder.
+2. **Create Folders** — Use the left sidebar to organize your workflow.
+3. **Add Tasks** — Click "Add Task" inside any selected folder.
 4. **Attach Files** — Link any local file (PDF, image, audio, document) directly to a task.
 5. **Track Progress** — Use the Time Reference view to see color-coded urgency.
 6. **Complete & Rate** — Mark tasks complete and leave an emoji feedback rating.
 
-*See [docs/USER_GUIDE.md](docs/USER_GUIDE.md) for full application instructions.*
+*See [docs/USER_GUIDE.md](docs/USER_GUIDE.md) for full instructions.*
 
 ---
 
@@ -187,7 +206,7 @@ Built using Python, Tkinter, and an auto-migrating SQLite database (`js_todo.db`
 ## Building from Source
 
 1. Clone the repo and create a virtual environment (`Python 3.8+`).
-2. Install dependencies: `pip install -r requirements.txt`
+2. `pip install -r requirements.txt`
 3. Run directly: `python src/todo_app.py`
 4. Build EXE: run `packaging/build_app.bat`
 
@@ -208,10 +227,10 @@ Built using Python, Tkinter, and an auto-migrating SQLite database (`js_todo.db`
 ## FAQ
 
 **Q: Where are my attachments stored?**
-A: Inside the `task_attachments/` folder on your local machine, next to the database.
+A: Inside the `task_attachments/` folder on your local machine.
 
 **Q: Is my data private?**
-A: Yes. Everything is 100% local. No internet connection is required or used.
+A: Yes. Everything is 100% local. No internet connection is ever used.
 
 *Read more in [docs/FAQ.md](docs/FAQ.md).*
 
