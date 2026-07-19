@@ -10,7 +10,7 @@ jobs:
   build:
     runs-on: windows-latest
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
 
     - name: Set up Python
       uses: actions/setup-python@v4
@@ -29,7 +29,7 @@ jobs:
         python -m PyInstaller todo_app.spec
 
     - name: Upload Artifact
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: JS-To-Do-List-EXE
         path: packaging/dist/todo_app.exe

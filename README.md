@@ -1,8 +1,12 @@
 <p align="center">
-  <img src="assets/icons/JSSTP logo.jpg" alt="JS SoftTools Logo" width="150" style="border-radius: 50%;">
+  <img src="assets/icons/JSSTP logo.jpg" alt="JS SoftTools Logo" width="120" style="border-radius: 50%;">
 </p>
 
 > **IMPORTANT:** This software is developed for student learning and educational purposes only.
+
+<p align="center">
+  <img src="assets/banner/hero-banner.png" alt="JS To-Do-List Banner" width="100%">
+</p>
 
 <h1 align="center">JS To-Do-List</h1>
 
@@ -11,7 +15,7 @@
 </p>
 
 <p align="center">
-  <strong>A futuristic, offline task manager featuring rich file attachments.</strong>
+  <strong>A futuristic, offline task manager featuring rich file attachments and smart task organization.</strong>
 </p>
 
 <p align="center">
@@ -24,7 +28,7 @@
 
 ---
 
-JS To-Do-List is a futuristic, fully offline task manager developed by **Jayasubramani** under the **Chip-X / JS SoftTools** brand. Built as a portfolio project, it features rich file attachments, a unique Time Reference view, a Midnight Watcher for daily tasks, and a standalone Windows executable.
+JS To-Do-List is a futuristic, fully offline task manager developed by **Jayasubramani** under the **Chip-X / JS SoftTools** brand. Built as a portfolio project, it features rich file attachments, a unique Time Reference view, a Midnight Watcher for daily tasks, and a standalone Windows executable — all stored 100% locally with no cloud dependency.
 
 ## Table of Contents
 
@@ -33,7 +37,7 @@ JS To-Do-List is a futuristic, fully offline task manager developed by **Jayasub
 - [Demo](#demo)
 - [Installation](#installation)
 - [Requirements](#requirements)
-- [Usage / Controls](#usage--controls)
+- [Usage](#usage)
 - [Project Structure](#project-structure)
 - [Architecture](#architecture)
 - [Building from Source](#building-from-source)
@@ -49,11 +53,12 @@ JS To-Do-List is a futuristic, fully offline task manager developed by **Jayasub
 
 ## Features
 
-- **Unlimited Folders:** Categorize your tasks efficiently.
-- **Rich Attachments:** Add PDFs, DOCX, XLSX, MP3s, and Images directly to tasks.
-- **Time Reference View:** Color-coded task urgency and feedback system.
-- **Midnight Watcher:** Automatically monitors and rolls over tasks at midnight.
-- **Portable Executable:** Single-file `.exe` requires no Python installation.
+- **Unlimited Folders** — Categorize your tasks into as many folders as you need.
+- **Rich Attachments** — Attach PDFs, DOCX, XLSX, MP3s, and Images directly to any task.
+- **Time Reference View** — Color-coded urgency system: Green (on track), Yellow (approaching), Red (overdue).
+- **Midnight Watcher** — Automatically monitors and rolls over daily/repeating tasks at midnight.
+- **Task Feedback System** — Rate completed tasks with emoji-based feedback ratings.
+- **Portable Executable** — Single-file `.exe`, no Python installation required for end users.
 
 *See [docs/FEATURES.md](docs/FEATURES.md) for the full feature list.*
 
@@ -63,20 +68,26 @@ JS To-Do-List is a futuristic, fully offline task manager developed by **Jayasub
 
 <table align="center">
   <tr>
-    <td><img src="assets/screenshots/main-window.png" alt="Main Window" width="400"></td>
-    <td><img src="assets/screenshots/Task-Folder.png" alt="Folder Dashboard" width="400"></td>
+    <td><img src="assets/screenshots/main-window.png" alt="Main Dashboard" width="400"></td>
+    <td><img src="assets/screenshots/Tasks-list.png" alt="Task List View" width="400"></td>
   </tr>
   <tr>
     <td align="center"><strong>Main Dashboard</strong></td>
-    <td align="center"><strong>Folder Overview</strong></td>
+    <td align="center"><strong>Task List View</strong></td>
   </tr>
   <tr>
-    <td><img src="assets/screenshots/Tasks-list.png" alt="Task Dashboard" width="400"></td>
-    <td><img src="assets/screenshots/Task-page1.png" alt="Task Details" width="400"></td>
+    <td><img src="assets/screenshots/Task-page1.png" alt="Task Details - Part 1" width="400"></td>
+    <td><img src="assets/screenshots/Task-page2.png" alt="Task Details - Part 2" width="400"></td>
   </tr>
   <tr>
-    <td align="center"><strong>Task List</strong></td>
-    <td align="center"><strong>Task Details View</strong></td>
+    <td align="center"><strong>Task Details (Top)</strong></td>
+    <td align="center"><strong>Task Details (Bottom)</strong></td>
+  </tr>
+  <tr>
+    <td colspan="2" align="center"><img src="assets/screenshots/Task-Folder.png" alt="Folder Dashboard" width="400"></td>
+  </tr>
+  <tr>
+    <td colspan="2" align="center"><strong>Folder Dashboard</strong></td>
   </tr>
 </table>
 
@@ -88,14 +99,14 @@ JS To-Do-List is a futuristic, fully offline task manager developed by **Jayasub
   <img src="assets/demo/demo.gif" alt="JS To-Do-List Demo GIF" width="100%">
 </p>
 
-> 🎥 **[Watch full high-quality MP4 walkthrough (demo.mp4)](assets/demo/demo.mp4)**
+> 🎥 **[Watch full MP4 walkthrough (demo.mp4)](assets/demo/demo.mp4)**
 
 ---
 
 ## Installation
 
 **Portable EXE (Recommended)**
-1. Download `JS-To-Do-List-vX.Y.Z-windows-x64.exe` from [Releases](https://github.com/jayamani2006/Jayamani_JS-To-Do-List/releases/latest).
+1. Download `JS-To-Do-List-v1.0.0-windows-x64.exe` from [Releases](https://github.com/jayamani2006/Jayamani_JS-To-Do-List/releases/latest).
 2. Double-click to run instantly. No installation required.
 
 *See [docs/INSTALL.md](docs/INSTALL.md) for detailed instructions.*
@@ -105,18 +116,31 @@ JS To-Do-List is a futuristic, fully offline task manager developed by **Jayasub
 ## Requirements
 
 - **OS:** Windows 10 or 11 (64-bit)
-- **Dependencies:** None required for the portable executable. 
+- **Dependencies:** None required for the portable executable.
 - **Storage:** Minimum 50 MB disk space.
 
 ---
 
-## Usage / Controls
+<p align="center">
+  <img src="assets/icons/JSSTP logo.jpg" alt="JS SoftTools Logo" width="60" style="border-radius: 50%;">
+  &nbsp;&nbsp;
+  <img src="assets/icons/icon.ico" alt="JS To-Do-List App Icon" width="60">
+</p>
+
+<p align="center">
+  <em>Built by JS SoftTools · Chip-X Team</em>
+</p>
+
+---
+
+## Usage
 
 1. **Open the app.**
-2. **Create Folders:** Organize your workflow on the left sidebar.
-3. **Add Tasks:** Click "Add Task" to create a new item in your selected folder.
-4. **Rich Attachments:** Attach any local files or links to your task.
-5. **Complete:** Mark complete and leave feedback/ratings for your tasks.
+2. **Create Folders** — Use the left sidebar to add and organize folders.
+3. **Add Tasks** — Click "Add Task" inside any folder.
+4. **Attach Files** — Link any local file (PDF, image, audio, document) directly to a task.
+5. **Track Progress** — Use the Time Reference view to see color-coded urgency.
+6. **Complete & Rate** — Mark tasks complete and leave an emoji feedback rating.
 
 *See [docs/USER_GUIDE.md](docs/USER_GUIDE.md) for full application instructions.*
 
@@ -129,15 +153,19 @@ JS To-Do-List is a futuristic, fully offline task manager developed by **Jayasub
 
 ```
 JS-To-Do-List/
-├── .github/          # GitHub templates & CI workflows
-├── assets/           # UI media, banners, screenshots, demo videos
+├── .github/          # GitHub Actions CI workflows & issue templates
+├── assets/           # UI media — banners, screenshots, demo videos, icons
+│   ├── banner/       # Hero banners
+│   ├── demo/         # GIF and MP4 demo files
+│   ├── icons/        # App icon and brand logo
+│   └── screenshots/  # Application UI screenshots
 ├── docs/             # Technical documentation
 ├── packaging/        # PyInstaller specs & build scripts
-├── sample_data/      # Demo database
+├── sample_data/      # Demo seed database
 ├── src/              # Python application source
-│   ├── todo_app.py   # Main application logic
+│   ├── todo_app.py   # Main application (Tkinter + SQLite)
 │   └── welcome.py    # Neon launcher splash screen
-└── [Config Files]    # README, LICENSE, requirements.txt, etc.
+└── [Config Files]    # README, LICENSE, CHANGELOG, requirements.txt, etc.
 ```
 
 </details>
@@ -146,9 +174,11 @@ JS-To-Do-List/
 
 ## Architecture
 
-Built using Python, Tkinter, and an auto-migrating SQLite database, the app implements a robust state-machine pattern to decouple logic from the UI.
-- The `js_todo.db` SQLite database is dynamically generated on first launch.
-- Local attachments are safely referenced rather than bloating the database.
+Built using Python, Tkinter, and an auto-migrating SQLite database (`js_todo.db`), the app uses a clean state-machine pattern to decouple UI logic from data operations.
+
+- The SQLite database is dynamically generated on first launch — no setup required.
+- Local file attachments are referenced by path, keeping the database lightweight.
+- A background thread monitors midnight to auto-reset daily repeating tasks.
 
 *Read the full technical breakdown in [docs/PROJECT_ARCHITECTURE.md](docs/PROJECT_ARCHITECTURE.md).*
 
@@ -156,12 +186,10 @@ Built using Python, Tkinter, and an auto-migrating SQLite database, the app impl
 
 ## Building from Source
 
-Want to tinker with the code? You can run it directly or build your own EXE.
-
-1. Clone the repo and set up a venv (`python 3.8+`).
-2. `pip install -r requirements.txt`
+1. Clone the repo and create a virtual environment (`Python 3.8+`).
+2. Install dependencies: `pip install -r requirements.txt`
 3. Run directly: `python src/todo_app.py`
-4. Build EXE: `packaging/build_app.bat` (or use PyInstaller directly with `.spec`)
+4. Build EXE: run `packaging/build_app.bat`
 
 *See [docs/BUILD.md](docs/BUILD.md) for detailed build instructions.*
 
@@ -169,19 +197,21 @@ Want to tinker with the code? You can run it directly or build your own EXE.
 
 ## Roadmap
 
-Upcoming features might include:
-- Variable difficulty modes
-- Cross-platform support
-- Enhanced keyboard shortcuts
+- Cross-platform support (Linux, macOS)
+- Cloud sync option (optional, local-first by default)
+- Enhanced keyboard shortcuts and accessibility
 
-*See [ROADMAP.md](ROADMAP.md) for the full list of planned ideas.*
+*See [ROADMAP.md](ROADMAP.md) for the full list of planned improvements.*
 
 ---
 
 ## FAQ
 
-**Q: Where are attachments stored?**  
-A: Inside the `task_attachments/` folder locally on your machine.
+**Q: Where are my attachments stored?**
+A: Inside the `task_attachments/` folder on your local machine, next to the database.
+
+**Q: Is my data private?**
+A: Yes. Everything is 100% local. No internet connection is required or used.
 
 *Read more in [docs/FAQ.md](docs/FAQ.md).*
 
@@ -196,27 +226,39 @@ Contributions are welcome! Please read [CONTRIBUTING.md](CONTRIBUTING.md) for se
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
-Please note the [DISCLAIMER.md](DISCLAIMER.md) regarding usage.
+Please also read [DISCLAIMER.md](DISCLAIMER.md) regarding usage and limitations.
 
 ---
 
 ## Developer
 
-Developed by **Jayasubramani** under the brand **Chip-X / JS SoftTools**.
+<p align="center">
+  <img src="assets/icons/JSSTP logo.jpg" alt="JS SoftTools" width="80" style="border-radius: 50%;">
+</p>
+
+<p align="center">
+  Developed by <strong>Jayasubramani</strong><br>
+  Founder · JS SoftTools · Chip-X Team<br>
+  B.E. Electrical & Electronics Engineering · Knowledge Institute of Technology · Anna University · Class of 2027
+</p>
 
 ---
 
 ## Support
 
-Found a bug or have a feature request? Please open an issue on the [GitHub Issues](https://github.com/jayamani2006/Jayamani_JS-To-Do-List/issues) page.
+Found a bug or have a feature request?
+
+- 🐛 [Report a Bug](https://github.com/jayamani2006/Jayamani_JS-To-Do-List/issues/new?template=bug_report.md)
+- 💡 [Request a Feature](https://github.com/jayamani2006/Jayamani_JS-To-Do-List/issues/new?template=feature_request.md)
 
 ---
 
 ## Acknowledgements
 
-- Built with standard library `sqlite3` and `tkinter`
-- Utilizes `tkcalendar` and `Pillow`
-- Built with PyInstaller
+- Built with Python's standard `tkinter` and `sqlite3` libraries
+- Calendar picker powered by [`tkcalendar`](https://tkcalendar.readthedocs.io/)
+- Image handling via [`Pillow`](https://pillow.readthedocs.io/)
+- Packaged with [PyInstaller](https://pyinstaller.org/)
 
 ---
 
